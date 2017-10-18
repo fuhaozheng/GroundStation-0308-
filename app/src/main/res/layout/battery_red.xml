@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/battery_red"
+    android:layout_width="wrap_content"
+    android:layout_height="7dp"
+    android:orientation="horizontal" >
+<ImageView
+    android:layout_width="84dp"
+    android:layout_height="4dp"
+    android:src="@drawable/uav_battery_red"/>
+<ImageView
+    android:layout_width="84dp"
+    android:layout_height="4dp"
+    android:layout_marginLeft="3dp"
+    android:src="@drawable/uav_battery_red"/>
+    
+
+</LinearLayout>

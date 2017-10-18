@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="horizontal" >
+<!-- 填充地图 -->   
+<LinearLayout 
+    android:id="@+id/linear1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+ <EditText
+    android:layout_width="595dp"
+    android:layout_height="310dp"
+    android:textSize="30sp"
+    android:textColor="#F7F7F7"
+    android:background="@drawable/setbar_bg"
+    android:text="V 1.0.1"/>   
+
+</LinearLayout>    
+    
+<!-- 提示 -->   
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/linear1"
+    android:layout_toLeftOf="@id/linear1"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="32sp"
+    android:textColor="#F7F7F7"
+    android:text="@string/course_set"/>
+</LinearLayout>
+
+
+
+<!--  -->   
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/linear1"
+    android:layout_toRightOf="@id/linear1"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal" >
+<Button
+    android:id="@+id/ensure"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:textColor="#F7F7F7"
+    android:text="@string/ensure"/>
+<Button
+    android:id="@+id/back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:background="@drawable/button_bg"
+    android:textSize="20sp"
+    android:textColor="#F7F7F7"
+    android:gravity="center"
+    android:text="@string/back"/>
+</LinearLayout>
+
+</RelativeLayout>

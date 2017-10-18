@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+<Button
+    android:id="@+id/button_for_airpoint"
+    android:layout_width="50sp"
+    android:layout_height="wrap_content"
+    android:text="航线"
+    android:textSize="15sp"
+    android:textColor="#ff0000"/>
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"/>
+    <Button
+        android:id="@+id/button_for_quyu"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:text="区域"
+        android:textSize="15sp"
+        android:textColor="#ff0000"/>
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"/>
+    <Button
+        android:id="@+id/button_for_set"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:textSize="15sp"
+        android:textColor="#ff0000"/>
+</LinearLayout>

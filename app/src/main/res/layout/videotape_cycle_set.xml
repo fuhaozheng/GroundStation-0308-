@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+<LinearLayout
+    android:id="@+id/l1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" 
+    android:orientation="horizontal" >
+<Button
+   android:id="@+id/cover_off"
+   android:background="@drawable/btn_cycle_cover_off"
+   android:layout_width="165dp"
+   android:layout_height="90dp"/>
+<Button
+   android:id="@+id/cover_on"
+   android:background="@drawable/btn_cycle_cover_on"
+   android:layout_width="165dp"
+   android:layout_height="90dp"
+   android:layout_marginLeft="95dp"/>      
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/l2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp" 
+    android:layout_below="@id/l1"
+    android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textColor="#f7f7f7"
+    android:textSize="20sp"
+    android:text="录像内容循环覆盖："/>
+<TextView
+    android:id="@+id/yes_no"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#f7f7f7"
+    android:textSize="20sp"
+    android:text="是"/>
+</LinearLayout>
+<!-- 返回 -->    
+<LinearLayout
+    android:id="@+id/l3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginRight="50dp"
+    android:layout_marginBottom="30dp"
+    android:layout_weight="1"  >
+<Button
+    android:id="@+id/save"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+     android:gravity="center"
+     android:textSize="25dp"
+     android:textColor="#F7F7F7"
+     android:text="保存"/>
+ <Button
+     android:id="@+id/cancel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/button_bg"
+     android:gravity="center"
+     android:layout_marginLeft="20dp"
+     android:textSize="25dp"
+     android:textColor="#F7F7F7"
+     android:text="取消"/>   
+</LinearLayout>
+</RelativeLayout>

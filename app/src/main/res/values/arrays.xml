@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>Beijing</item>
+        <item>Shanghai</item>
+        <item>Guangzhou</item>
+        <item>Shenzhen</item>
+    </string-array>
+    <string-array name="qianbilight">
+        <item>空</item>
+        <item>打开</item>
+        <item>关闭</item>
+    </string-array>
+    <string-array name="camera_pitch_limit">
+        <item>空</item>
+        <item>+/-90</item>
+        <item>+/-120</item>
+    </string-array>
+    <string-array name="camera_standard">
+        <item>空</item>
+        <item>PAL</item>
+        <item>NSTC</item>
+    </string-array>
+    <string-array name="image_size">
+        <item>空</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="camera_parameter">
+        <item>空</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="oneOfThree">
+        <item>空</item>
+        <item>定点</item>
+        <item>巡航</item>
+        <item>手动</item>
+    </string-array>
+    <string-array name="twoOfThree">
+        <item>空</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="defined_presskey">
+        <item>空</item>
+        <item>一键起飞</item>
+        <item>一键降落</item>
+        <item>一键航线</item>
+        <item>一键返航</item>
+        <item>机头朝向锁定开关</item>
+        <item>拍照</item>
+        <item>启动录像/停止录像</item>
+        <item>挂钩</item>
+        <item>吊舱</item>
+        <item>喊话器</item>
+        <item>探照灯</item>
+        <item>激光致盲</item>
+        <item>无线中继</item>
+    </string-array>
+    <string-array name="direction_rotation">
+        <item>空</item>
+        <item>顺时针</item>
+        <item>逆时针</item>
+    </string-array>
+    <string-array name="yaw_angle_mode">
+        <item>空</item>
+        <item>延航线方向</item>
+        <item>航点独立设置</item>
+        <item>手动</item>
+    </string-array>
+    <string-array name="camera_type">
+        <item>空</item>
+        <item>三轴高清摄像头</item>
+        <item>三轴红外微光摄像头</item>
+        <item>三轴20倍变焦摄像头</item>
+        <item>三轴红外变焦摄像头</item>
+    </string-array>
+    <string-array name="camera_serial_number">
+        <item>空</item>
+        <item>相机1</item>
+        <item>相机2</item>
+        <item>测绘相机</item>
+    </string-array>
+    <string-array name="camera_yaw_angle_mode">
+        <item>空</item>
+        <item>延机头方向</item>
+        <item>延航线方向</item>
+        <item>兴趣点方向</item>
+    </string-array>
+    <string-array name="action_takephoto">
+        <item>空</item>
+        <item>拍照开始</item>
+        <item>拍照结束</item>
+    </string-array>
+    <string-array name="action_recordvideo">
+        <item>空</item>
+        <item>录像开始</item>
+        <item>录像结束</item>
+    </string-array>
+    <string-array name="action_cameraformat">
+        <item>空</item>
+        <item>格式化</item>
+    </string-array>
+    <string-array name="action_cameranumber">
+        <item>空</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="action_camerainterest">
+        <item>空</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="action_putdownlocation">
+        <item>空</item>
+        <item>第一投放位置</item>
+        <item>第二投放位置</item>
+        <item>第三投放位置</item>
+        <item>第四投放位置</item>
+    </string-array>
+    <string-array name="action_hook">
+        <item>空</item>
+        <item>挂钩投放</item>
+        <item>挂钩回收</item>
+    </string-array>
+    <string-array name="action_diaocang">
+        <item>空</item>
+        <item>吊舱投放</item>
+        <item>吊舱回收</item>
+    </string-array>
+    <string-array name="action_hanhuaqi">
+        <item>空</item>
+        <item>喊话器打开</item>
+        <item>喊话器关闭</item>
+    </string-array>
+    <string-array name="action_searchlight">
+        <item>空</item>
+        <item>探照灯打开</item>
+        <item>探照灯关闭</item>
+    </string-array>
+    <string-array name="action_jiguangzhimang">
+        <item>空</item>
+        <item>激光打开</item>
+        <item>激光关闭</item>
+    </string-array>
+    <string-array name="action_wirelessrelay">
+        <item>空</item>
+        <item>中继打开</item>
+        <item>中继关闭</item>
+    </string-array>
+    <string-array name="action_interest">
+    <item>空</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+</string-array>
+    <string-array name="alert_set">
+        <item>空</item>
+        <item>振动</item>
+        <item>声音</item>
+        <item>混合</item>
+    </string-array>
+</resources>

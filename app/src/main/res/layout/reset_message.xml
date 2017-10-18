@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical" >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textColor="#F7F7F7"
+    android:textSize="42dp"
+    android:text="@string/resume_default__yes_no"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp" >
+<Button
+    android:id="@+id/resume_yes"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+    android:layout_marginLeft="29dp"
+    android:gravity="center"
+    android:textColor="#F7F7F7"
+    android:textSize="22dp"
+    android:text="@string/resume_default__yes"/>
+<Button
+    android:id="@+id/resume_no"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+    android:layout_marginLeft="140dp"
+    android:gravity="center"
+    android:textColor="#F7F7F7"
+    android:textSize="22dp"
+    android:text="@string/resume_default__no"/>
+</LinearLayout>    
+</LinearLayout>
+</RelativeLayout>

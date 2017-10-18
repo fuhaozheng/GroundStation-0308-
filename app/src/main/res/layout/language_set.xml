@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="27dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:textColor="#F7F7F7"
+    android:textSize="33sp"
+    android:text="@string/language_set"/>
+    </LinearLayout>  
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:layout_marginLeft="27dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+<RadioButton
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:layout_gravity="center"
+    android:button="@null"
+    android:background="@drawable/language_bg"
+    android:gravity="center"
+    android:textColor="#F7F7F7"
+    android:textSize="33sp"
+    android:text="@string/chinese"/>
+<RadioButton
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:layout_marginLeft="125dp"
+    android:button="@null"
+    android:background="@drawable/language_bg"
+    android:gravity="center"
+    android:textColor="#F7F7F7"
+    android:textSize="33sp"
+    android:text="@string/english"/>
+</RadioGroup>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_gravity="bottom"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal" >
+<Button
+    android:id="@+id/ensure"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+    android:gravity="center"
+    android:textColor="#F7F7F7"
+    android:textSize="22sp"
+    android:text="@string/ensure"/>
+<Button
+    android:id="@+id/back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+    android:layout_marginLeft="20dp"
+    android:gravity="center"
+    android:textColor="#F7F7F7"
+    android:textSize="22sp"
+    android:text="@string/back"/>
+</LinearLayout>
+  
+
+</LinearLayout>
+

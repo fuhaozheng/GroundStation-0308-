@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <RadioGroup
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+<RadioButton
+    android:id="@+id/imagesize"
+    android:layout_width="136dp"
+    android:layout_height="136dp"
+    android:button="@null"
+    android:background="@drawable/language_bg"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:textColor="#f7f7f7"
+    android:textSize="39sp"
+    android:text="16M"/>
+    </RadioGroup>
+<TextView
+    android:id="@+id/t1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/r1"
+    android:layout_marginTop="59dp"
+    android:gravity="center"
+    android:textColor="#f7f7f7"
+    android:textSize="20sp"
+    android:text="16.0M (4608x3456)"/>   
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp">
+<Button
+    android:id="@+id/save"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+    android:gravity="center"
+    android:textColor="#f7f7f7"
+    android:textSize="22sp"
+    android:text="保存"/> 
+<Button
+    android:id="@+id/cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+    android:layout_marginLeft="20dp"
+    android:gravity="center"
+    android:textColor="#f7f7f7"
+    android:textSize="22sp"
+    android:text="取消"/>       
+</LinearLayout>
+</RelativeLayout>

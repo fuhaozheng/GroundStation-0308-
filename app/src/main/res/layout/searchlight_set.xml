@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#F7F7F7"
+        android:textSize="30sp"
+        android:text="@string/searchlight_set"/>
+       <!--  添加选项-->      
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal">
+    <!--  开-->      
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="2sp"
+      android:textColor="#F7F7F7"
+      android:textSize="30sp"
+      android:text="@string/open"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="50dp"
+          android:padding="2sp"
+          android:textColor="#F7F7F7"
+          android:textSize="30sp"
+          android:text="@string/close"/>
+
+  </LinearLayout>
+  <!--  关-->      
+  <RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="26dp"
+    android:orientation="vertical">
+      <RadioButton
+          android:id="@+id/open"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginLeft="50dp"
+          android:button="@null"
+          android:checked="true"
+          android:background="@drawable/light_button_bg"/>
+      <RadioButton
+          android:id="@+id/close"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginLeft="50dp"
+          android:layout_marginTop="56dp"
+          android:button="@null"
+          android:background="@drawable/light_button_bg"/>
+  </RadioGroup>
+  </LinearLayout>  
+  
+  
+ <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+    <Button
+       android:id="@+id/ensure"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+       android:textSize="24sp"
+       android:textColor="#F7F7F7"
+       android:layout_marginLeft="5dp"
+       android:text="@string/ensure"/>
+    <Button
+       android:id="@+id/back"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+       android:textSize="24sp"
+       android:textColor="#F7F7F7"
+       android:layout_marginLeft="25dp"
+       android:layout_marginRight="30dp"
+       android:text="@string/back"/>
+  </LinearLayout>
+</RelativeLayout>

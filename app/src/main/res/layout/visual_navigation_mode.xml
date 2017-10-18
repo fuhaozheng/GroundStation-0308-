@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+<!-- 设置 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="20dp"
+    android:textColor="#F7F7F7"
+    android:textSize="34sp"
+    android:text="@string/visual_navigation"/>
+</LinearLayout>
+    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1" 
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical" >
+<RadioGroup
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<RadioButton
+   android:id="@+id/car"
+    android:button="@null"
+   android:background="@drawable/car_bg"
+   android:layout_width="200dp"
+   android:layout_height="200dp"/>
+
+<RadioButton
+   android:id="@+id/people"
+    android:button="@null"
+   android:background="@drawable/people_bg"
+    android:layout_marginLeft="20dp"
+   android:layout_width="200dp"
+   android:layout_height="200dp"/>
+  <RadioButton
+      android:id="@+id/building"
+      android:button="@null"
+      android:background="@drawable/building_bg"
+      android:layout_marginLeft="20dp"
+      android:layout_width="200dp"
+      android:layout_height="200dp"/>
+ </RadioGroup>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:textColor="#f7f7f7"
+        android:textSize="25sp"
+        android:text="车"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:textColor="#f7f7f7"
+            android:textSize="25sp"
+            android:text="人"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:textColor="#f7f7f7"
+            android:textSize="25sp"
+            android:text="建筑"/>
+    </LinearLayout>
+</LinearLayout>
+<!-- 返回 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:layout_marginRight="50dp"
+    android:layout_marginBottom="30dp"
+    android:layout_weight="1"  >
+<Button
+    android:id="@+id/follow_monitor"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/button_bg"
+     android:gravity="center"
+     android:textSize="20dp"
+     android:textColor="#F7F7F7"
+     android:text="@string/track_monitor"/>
+ <Button
+     android:id="@+id/back"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/button_bg"
+     android:gravity="center"
+     android:layout_marginLeft="20dp"
+     android:textSize="20dp"
+     android:textColor="#F7F7F7"
+     android:text="@string/back"/>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_interface_left_layout"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">    
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="0dp">
+  <RelativeLayout
+    android:id="@+id/r1"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">    
+<ImageView
+    android:id="@+id/satellite"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/icon_satellite"/>
+<TextView
+    android:id="@+id/satellite_count"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/satellite"
+    android:layout_marginLeft="10dp"
+    android:layout_centerHorizontal="true"
+    android:text="3"
+    android:textColor="#ff0000"
+    android:textSize="18sp"/>"
+</RelativeLayout>
+<RelativeLayout
+    android:id="@+id/r2"
+    android:layout_below="@id/r1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="320dp">
+<Button
+    android:id="@+id/control_left"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:background="@drawable/left_rocker"/>
+<ImageView
+    android:id="@+id/control_horizontal"
+    android:layout_width="47dp"
+    android:layout_height="9dp"
+    android:layout_below="@id/control_left"
+    android:layout_marginTop="8dp"
+    android:src="@drawable/left_right"/>
+<ImageView
+    android:id="@+id/control_vertical"
+    android:layout_width="9dp"
+    android:layout_height="47dp"
+    android:layout_toRightOf="@id/control_left"
+    android:layout_marginLeft="8dp"
+    android:src="@drawable/up_down"/>
+</RelativeLayout>
+<RelativeLayout
+    android:id="@+id/speed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="106dp"
+    android:layout_marginLeft="5dp">
+  <TextView
+    android:id="@+id/speed_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="速度"
+    android:textColor="#f7f7f7"
+    android:textSize="15sp"/> 
+  <TextView
+    android:id="@+id/speed_value"
+    android:layout_width="60dp"
+    android:layout_height="28dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/icn_speed"
+    android:layout_below="@id/speed_text"
+    android:gravity="center"
+    android:layout_marginTop="8dp"
+    android:text="200"
+    android:textColor="#f7f7f7"
+    android:textSize="15sp"/>
+  </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/speed_ruler_left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="2dp">
+  <ImageView
+    android:id="@+id/calibration_left"
+    android:layout_width="35dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/calibration_left"/>   
+</RelativeLayout>  
+</RelativeLayout>
+</RelativeLayout>

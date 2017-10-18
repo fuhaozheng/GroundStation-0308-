@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+<!-- 设置 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+    android:textColor="#F7F7F7"
+    android:textSize="40sp"
+    android:text="@string/saving_set"/>
+</LinearLayout>
+
+<!-- 图标 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1" 
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+<RelativeLayout
+  android:layout_width="131dp"
+  android:layout_height="wrap_content">
+<RelativeLayout
+  android:id="@+id/a1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  >
+ <Button
+   android:id="@+id/b1"
+   android:layout_width="131dp"
+   android:layout_height="131dp"
+     android:background="@drawable/save_set_choose"
+   android:layout_centerInParent="true"
+   android:textColor="#ff0000"
+   android:textSize="54sp"
+   android:text="A"/>
+</RelativeLayout>
+ <TextView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/a1"
+   android:layout_marginTop="28dp"
+   android:textColor="#f7f7f7"
+   android:textSize="20sp"
+   android:text="@string/launch_point_A"/>
+</RelativeLayout>
+
+
+<RelativeLayout
+  android:layout_width="131dp"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="35dp">
+<RelativeLayout
+  android:id="@+id/a2"
+  android:layout_width="131dp"
+  android:layout_height="131dp">
+ <Button
+     android:id="@+id/b2"
+     android:layout_width="131dp"
+     android:layout_height="131dp"
+     android:background="@drawable/save_set_choose"
+     android:layout_centerInParent="true"
+     android:textColor="#ff0000"
+     android:textSize="54sp"
+     android:text="B"/>
+</RelativeLayout>
+ <TextView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/a2"
+   android:layout_marginTop="28dp"
+   android:textColor="#f7f7f7"
+   android:textSize="20sp"
+   android:text="@string/launch_point_B"/>
+</RelativeLayout>
+
+<RelativeLayout
+  android:layout_width="131dp"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="35dp">
+<RelativeLayout
+  android:id="@+id/a3"
+  android:layout_width="131dp"
+  android:layout_height="131dp">
+ <Button
+     android:id="@+id/b3"
+     android:layout_width="131dp"
+     android:layout_height="131dp"
+     android:background="@drawable/save_set_white"
+     android:layout_centerInParent="true"
+     android:textColor="#ff0000"
+     android:textSize="54sp"
+     android:text="C"/>
+</RelativeLayout>
+ <TextView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/a3"
+   android:layout_marginTop="28dp"
+   android:textColor="#f7f7f7"
+   android:textSize="20sp"
+   android:text="@string/launch_point_C"/>
+</RelativeLayout>
+
+<RelativeLayout
+  android:layout_width="131dp"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="35dp">
+<RelativeLayout
+  android:id="@+id/a4"
+  android:layout_width="131dp"
+  android:layout_height="131dp">
+ <Button
+     android:id="@+id/b4"
+     android:layout_width="131dp"
+     android:layout_height="131dp"
+     android:background="@drawable/save_set_gray"
+     android:layout_centerInParent="true"
+     android:textColor="#ff0000"
+     android:textSize="54sp"
+     android:text="D"/>
+</RelativeLayout>
+ <TextView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/a4"
+   android:layout_marginTop="28dp"
+   android:textColor="#f7f7f7"
+   android:textSize="20sp"
+   android:text="@string/launch_point_D"/>
+</RelativeLayout>
+</LinearLayout>
+<!-- 返回 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:layout_marginRight="50dp"
+    android:layout_marginBottom="30dp"
+    android:layout_weight="1"  >
+<Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+     android:gravity="center"
+     android:textSize="22dp"
+     android:textColor="#F7F7F7"
+     android:text="@string/select_all"/>
+<Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+     android:layout_marginLeft="20dp"
+     android:gravity="center"
+     android:textSize="22dp"
+     android:textColor="#F7F7F7"
+     android:text="@string/launch"/>
+ <Button
+     android:id="@+id/back"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/button_bg"
+     android:layout_marginLeft="20dp"
+     android:gravity="center"
+     android:textSize="22dp"
+     android:textColor="#F7F7F7"
+     android:text="@string/back"/>
+
+</LinearLayout>
+
+</LinearLayout>
+

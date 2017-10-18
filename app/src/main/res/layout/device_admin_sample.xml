@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:padding="4dip" android:gravity="center_horizontal"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+	<Button android:id="@+id/enable" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginTop="30.0dip"
+		android:text="激活">
+		<requestFocus />
+	</Button>
+	<Button android:id="@+id/disable" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginTop="30.0dip"
+		android:text="取消激活">
+	</Button>
+	<Button android:id="@+id/wipe_data" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginTop="30.0dip"
+		android:layout_weight="0" android:text="恢复出厂">
+	</Button>
+</LinearLayout>
+

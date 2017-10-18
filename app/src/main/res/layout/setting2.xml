@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+<!-- 设置 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+    android:textColor="#F7F7F7"
+    android:textSize="30sp"
+    android:text="@string/setting"/>
+</LinearLayout>
+
+<!-- 图标 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1" 
+    android:layout_marginLeft="30dp"
+    android:orientation="horizontal" >
+
+ <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_marginTop="30dp">
+  <Button
+      android:id="@+id/returnback"
+     android:layout_width="30dp"
+     android:layout_height="45dp"
+     android:background="@drawable/returnback"/>
+</LinearLayout> 
+ 
+   <!-- 格式化 --> 
+ <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:layout_marginLeft="60dp">
+  <Button
+   android:id="@+id/format"
+   android:layout_alignParentTop="true"
+   android:layout_width="80dp"
+   android:layout_height="70dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/btn_set_formatting">
+  </Button>
+  
+  <ImageView
+   android:id="@+id/shadow1"
+   android:layout_width="80dp"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/format"
+   android:layout_marginTop="20dp"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview1"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow1"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:textColor="#F7F7F7"
+   android:textSize="15sp"
+   android:text="@string/format">
+  </TextView>  
+</RelativeLayout>
+
+   <!-- 恢复出厂设置 --> 
+ <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:layout_marginLeft="66dp">  
+  <Button
+   android:id="@+id/resume_default"
+   android:layout_alignParentTop="true"
+   android:layout_width="62dp"
+   android:layout_height="70dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/btn_reset_to_defaults">
+  </Button>
+  
+  <ImageView
+   android:id="@+id/shadow2"
+   android:layout_width="80dp"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/resume_default"
+   android:layout_marginTop="20dp"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview2"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow2"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:textColor="#F7F7F7"
+   android:textSize="15sp"
+   android:text="@string/resume_default">
+  </TextView>  
+</RelativeLayout>
+
+    <!-- 时间设定--> 
+ <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:layout_marginLeft="66dp">  
+  <Button
+   android:id="@+id/time_set"
+   android:layout_alignParentTop="true"
+   android:layout_width="69dp"
+   android:layout_height="70dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/btn_set_time">
+  </Button>
+  
+  <ImageView
+   android:id="@+id/shadow3"
+   android:layout_width="80dp"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/time_set"
+   android:layout_marginTop="20dp"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview3"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow3"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:textColor="#F7F7F7"
+   android:textSize="15sp"
+   android:text="@string/time_set">
+  </TextView>  
+</RelativeLayout>
+
+     <!-- 软件版本信息--> 
+ <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:layout_marginLeft="66dp">  
+  <Button
+   android:id="@+id/software_message"
+   android:layout_alignParentTop="true"
+   android:layout_width="87dp"
+   android:layout_height="70dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/btn_version">
+  </Button>
+  
+  <ImageView
+   android:id="@+id/shadow4"
+   android:layout_width="80dp"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/software_message"
+   android:layout_marginTop="20dp"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview4"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow4"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:textColor="#F7F7F7"
+   android:textSize="15sp"
+   android:text="@string/software_edition_message">
+  </TextView>  
+</RelativeLayout>
+</LinearLayout>
+<!-- 返回 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:layout_marginRight="50dp"
+    android:layout_marginBottom="30dp"
+    android:layout_weight="1"  >
+ <Button
+     android:id="@+id/back"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/button_bg"
+     android:gravity="center"
+     android:textSize="23sp"
+     android:textColor="#F7F7F7"
+     android:text="@string/back"/>
+
+</LinearLayout>
+</LinearLayout>
+

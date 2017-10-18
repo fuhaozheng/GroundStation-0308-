@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="750dp"
+    android:layout_height="40dp" 
+    android:orientation="horizontal">
+<RelativeLayout
+    android:id="@+id/r1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"> 
+    <ImageView
+       android:id="@+id/imgb1"
+       android:layout_width="34dp"
+       android:layout_height="14dp"
+       android:src="@drawable/icon_battery_uav"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:layout_below="@id/imgb1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        android:text="100%"/>
+</RelativeLayout>
+ <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <include layout="@layout/battery_green"/>
+     </LinearLayout>
+</LinearLayout>

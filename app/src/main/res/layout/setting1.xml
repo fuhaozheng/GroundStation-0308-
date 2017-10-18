@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+<!-- 设置 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="25dp"
+    android:textColor="#F7F7F7"
+    android:textSize="30sp"
+    android:text="@string/setting"/>
+</LinearLayout>
+
+<!-- 图标 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1" 
+    android:layout_marginLeft="70dp"
+    android:orientation="horizontal" >
+  <!-- 导航灯控制开关 --> 
+ <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1">
+  <Button
+   android:id="@+id/navigation_light"
+   android:layout_alignParentTop="true"
+   android:layout_width="66dp"
+   android:layout_height="66dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/btn_navigation_lights">
+  </Button>
+  
+  <ImageView
+   android:id="@+id/shadow1"
+   android:layout_width="66dp"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/navigation_light"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview1"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow1"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:textColor="#F7F7F7"
+   android:textSize="15sp"
+   android:text="@string/navigation_light_switch">
+  </TextView>  
+</RelativeLayout>
+
+   <!-- 语言设置 --> 
+ <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:layout_marginLeft="43dp">  
+  <Button
+   android:id="@+id/language_set"
+   android:layout_alignParentTop="true"
+   android:layout_width="66dp"
+   android:layout_height="66dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/btn_language">
+  </Button>
+  
+  <ImageView
+   android:id="@+id/shadow2"
+   android:layout_width="66dp"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/language_set"
+   android:layout_marginTop="20dp"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview2"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow2"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:textColor="#F7F7F7"
+   android:textSize="15sp"
+   android:text="@string/language_set">
+  </TextView>  
+</RelativeLayout>
+
+    <!-- 设定航向 --> 
+ <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:layout_marginLeft="43dp">  
+  <Button
+   android:id="@+id/course_set"
+   android:layout_alignParentTop="true"
+   android:layout_width="66dp"
+   android:layout_height="66dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/btn_set_course">
+  </Button>
+  
+  <ImageView
+   android:id="@+id/shadow3"
+   android:layout_width="66dp"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/course_set"
+   android:layout_centerInParent="true"
+   android:layout_marginTop="20dp"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview3"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/shadow3"
+   android:layout_marginTop="20dp"
+   android:textColor="#F7F7F7"
+   android:textSize="15sp"
+   android:text="@string/course_set">
+  </TextView>  
+</RelativeLayout>
+
+    <!-- 设置内置通信 --> 
+ <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:layout_marginLeft="43dp">  
+  <Button
+   android:id="@+id/communicate_config"
+   android:layout_alignParentTop="true"
+   android:layout_width="56dp"
+   android:layout_height="66dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/btn_communication">
+  </Button>
+  
+  <ImageView
+   android:id="@+id/shadow4"
+   android:layout_width="66dp"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/communicate_config"
+   android:layout_centerInParent="true"
+   android:layout_marginTop="20dp"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview4"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow4"
+   android:layout_centerInParent="true"
+   android:layout_marginTop="20dp"
+   android:textColor="#F7F7F7"
+   android:textSize="15sp"
+   android:text="@string/comunication_config">
+  </TextView>  
+</RelativeLayout>
+
+    <!-- 视觉导航模式 --> 
+ <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:layout_marginLeft="43dp">  
+  <Button
+   android:id="@+id/visual_navigation"
+   android:layout_alignParentTop="true"
+   android:layout_width="66dp"
+   android:layout_height="66dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/btn_navigation">
+  </Button>
+  
+  <ImageView
+   android:id="@+id/shadow5"
+   android:layout_width="66dp"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/visual_navigation"
+   android:layout_marginTop="20dp"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview5"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:layout_below="@id/shadow5"
+   android:layout_marginTop="20dp"
+   android:textColor="#F7F7F7"
+   android:textSize="15sp"
+   android:text="@string/visual_navigation">
+  </TextView>  
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_marginLeft="43dp">
+  <Button
+      android:id="@+id/forward"
+     android:layout_width="30dp"
+     android:layout_height="60dp"
+      android:layout_marginTop="30dp"
+     android:background="@drawable/forward"/>
+</LinearLayout> 
+  
+</LinearLayout>
+<!-- 返回 -->    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:layout_marginRight="50dp"
+    android:layout_marginBottom="30dp"
+    android:layout_weight="1"  >
+ <Button
+     android:id="@+id/back"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/button_bg"
+     android:gravity="center"
+     android:textSize="20sp"
+     android:textColor="#F7F7F7"
+     android:text="@string/back"/>
+
+</LinearLayout>
+</LinearLayout>

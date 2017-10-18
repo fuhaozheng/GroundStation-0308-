@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_interface_right_layout"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">      
+ <RelativeLayout
+    android:id="@+id/speed_ruler_right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="2dp">
+  <ImageView
+    android:id="@+id/calibration_right"
+    android:layout_width="35dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:src="@drawable/calibration_right"/>   
+</RelativeLayout>
+<RelativeLayout
+    android:id="@+id/highly"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/speed_ruler_right"
+    android:layout_marginTop="220dp">
+  <TextView
+    android:id="@+id/highly_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="高度"
+    android:textColor="#f7f7f7"
+    android:textSize="15sp"/> 
+  <TextView
+    android:id="@+id/highly_value"
+    android:layout_width="60dp"
+    android:layout_height="28dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/icn_highly"
+    android:layout_below="@id/highly_text"
+    android:gravity="center"
+    android:layout_marginTop="8dp"
+    android:text="100"
+    android:textColor="#f7f7f7"
+    android:textSize="15sp"/>
+  </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/r1"
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">    
+<ImageView
+    android:id="@+id/remote_control"
+    android:layout_width="30dp"
+    android:layout_height="28dp"
+    android:src="@drawable/remote_control"/>
+<ImageView
+    android:id="@+id/battery_value"
+    android:layout_width="14dp"
+    android:layout_height="25dp"
+    android:layout_toRightOf="@id/remote_control"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/icn_battery_50"/>
+<TextView
+    android:id="@+id/satellite_count"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/remote_control"
+    android:layout_marginTop="5dp"
+    android:text="50%"
+    android:textColor="#ff0000"
+    android:textSize="14sp"/>
+</RelativeLayout>
+<RelativeLayout
+    android:id="@+id/r2"
+    android:layout_below="@id/r1"
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="300dp">
+<ImageView
+    android:id="@+id/control_vertical"
+    android:layout_width="9dp"
+    android:layout_height="47dp"
+    android:src="@drawable/up_down"/>
+<RelativeLayout
+    android:id="@+id/r3"
+    android:layout_toRightOf="@id/control_vertical"    
+    android:layout_marginLeft="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">  
+ <Button
+    android:id="@+id/control_right"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:background="@drawable/right_rocker"/> 
+ <ImageView
+    android:id="@+id/control_horizontal"
+    android:layout_width="47dp"
+    android:layout_height="9dp"
+    android:layout_below="@id/control_right"
+    android:layout_marginTop="8dp"
+    android:src="@drawable/left_right"/> 
+</RelativeLayout> 
+</RelativeLayout>
+
+</RelativeLayout>
+
+

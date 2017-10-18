@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal" >
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/pal"
+            android:button="@null"
+            android:checked="true"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/light_button_bg"/>
+           <RadioButton
+               android:id="@+id/nstc"
+               android:button="@null"
+               android:layout_width="33dp"
+               android:layout_height="33dp"
+               android:layout_marginTop="111dp"
+               android:background="@drawable/light_button_bg"/>
+          </RadioGroup>
+          
+          <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+              android:layout_marginTop="5dp"
+           android:orientation="vertical">
+              <TextView
+                  android:id="@+id/t1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="31dp"
+                  android:text="PAL制式"
+                  android:textColor="#f7f7f7"
+                  android:textSize="20sp" />
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:text="NSTC制式"
+            android:textColor="#f7f7f7"
+            android:textSize="20sp" />
+        </LinearLayout>
+     </LinearLayout>  
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dp"
+            android:layout_marginTop="77dp"
+            android:orientation="vertical">
+            <com.aee.groundstation.widget.CustomViewGroup
+                android:id="@+id/pal50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></com.aee.groundstation.widget.CustomViewGroup>
+            <com.aee.groundstation.widget.CustomViewGroup
+                android:id="@+id/nstc60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                ></com.aee.groundstation.widget.CustomViewGroup>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="49dp"
+                android:gravity="center"
+                android:text="1920x1080p 25f"
+                android:textColor="#f7f7f7"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dp"
+            android:layout_marginTop="77dp"
+            android:orientation="vertical">
+             <com.aee.groundstation.widget.CustomViewGroup
+                 android:id="@+id/pal25"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 ></com.aee.groundstation.widget.CustomViewGroup>
+             <com.aee.groundstation.widget.CustomViewGroup
+                 android:id="@+id/nstc30"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="35dp"
+                 ></com.aee.groundstation.widget.CustomViewGroup>
+     </LinearLayout>
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="right|bottom"
+             android:layout_marginRight="20dp"
+             android:layout_marginBottom="20dp">
+             <Button
+                 android:id="@+id/cancel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/button_bg"
+                 android:layout_marginLeft="20dp"
+                 android:text="取消"
+                 android:textColor="#f7f7f7"
+                 android:textSize="20sp"/>
+            <Button
+                android:id="@+id/save11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:text="保存"
+                android:textColor="#f7f7f7"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+</LinearLayout>

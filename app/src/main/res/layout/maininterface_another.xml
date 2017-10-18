@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg">
+        <RelativeLayout
+            android:id="@+id/middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextureView
+                android:id="@+id/mAutoFitTextureView"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FF00"/>
+            <RelativeLayout
+                android:id="@+id/fatherOfMapView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:background="#0000FF">
+            </RelativeLayout>
+        </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout_of_airpoint_all_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+        <include layout="@layout/airpoint_all_setting"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_of_tasktype_messageoperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <include layout="@layout/layout_of_tasktype_messageoperation"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_of_alltask_and_airpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+        <include layout="@layout/layout_of_alltask_and_airpoint"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_of_airpoint_task_action_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/id_of_alltask_and_airpoint"
+        android:layout_above="@+id/id_of_tasktype_messageoperation"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone">
+        <include layout="@layout/layout_of_airpoint_task_action_list"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_of_adjust_airpoint_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+        <include layout="@layout/adjust_location"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_of_data_of_signal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include layout="@layout/data_of_signal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_of_data_of_attitude_flying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_of_data_of_signal">
+        <include layout="@layout/data_of_attitude_flying"/>
+    </LinearLayout>
+</RelativeLayout>

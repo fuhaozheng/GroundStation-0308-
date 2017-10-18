@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="horizontal" >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_gravity="top"
+    android:layout_marginLeft="31dp"
+    android:layout_marginTop="31dp"
+    android:gravity="center"
+    android:textColor="#f7f7f7"
+    android:textSize="32sp"
+    android:text="@string/map_set"/>"
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="4"
+    android:layout_gravity="center">    
+<RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">  
+  <Button
+   android:id="@+id/hangdian"
+   android:layout_alignParentTop="true"
+   android:layout_width="73dp"
+   android:layout_height="73dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/hangdian_bg"/> 
+  <ImageView
+   android:id="@+id/shadow1"
+   android:layout_width="73dp"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/hangdian"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview1"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow1"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:textColor="#F7F7F7"
+   android:textSize="20dp"
+   android:text="@string/hangdian">
+  </TextView>  
+</RelativeLayout>
+
+<RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="58dp">  
+  <Button
+   android:id="@+id/hangxian"
+   android:layout_alignParentTop="true"
+   android:layout_width="73dp"
+   android:layout_height="73dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/airway_bg"/>
+  
+  <ImageView
+   android:id="@+id/shadow2"
+   android:layout_width="73dp"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/hangxian"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview2"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow2"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:textColor="#F7F7F7"
+   android:textSize="20dp"
+   android:text="@string/hangxian">
+  </TextView>  
+</RelativeLayout>
+
+<RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="58dp">  
+  <Button
+   android:id="@+id/self_fly"
+   android:layout_alignParentTop="true"
+   android:layout_width="73dp"
+   android:layout_height="73dp"
+   android:layout_centerInParent="true"
+   android:background="@drawable/autonomous_flight_bg"/>
+  
+  <ImageView
+   android:id="@+id/shadow3"
+   android:layout_width="73dp"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/self_fly"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:src="@drawable/icon_shadow">
+  </ImageView>
+  <TextView
+   android:id="@+id/textview"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/shadow3"
+   android:layout_marginTop="20dp"
+   android:layout_centerInParent="true"
+   android:textColor="#F7F7F7"
+   android:textSize="20dp"
+   android:text="@string/self_fly">
+  </TextView>  
+</RelativeLayout>
+</LinearLayout>
+<Button
+    android:id="@+id/back"
+    android:layout_width="40dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@drawable/button_bg"
+    android:layout_gravity="bottom"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="30dp"
+    android:textColor="#f7f7f7"
+    android:textSize="22sp"
+    android:gravity="center"
+    android:text="@string/back"/>
+</LinearLayout>
